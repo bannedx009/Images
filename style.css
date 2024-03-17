@@ -1,0 +1,274 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#nav{
+    display: flex;
+    padding: 0vh 0vh;
+    position: fixed;
+    background-color: rgb(0, 234, 255);
+    width: 100%;
+    margin-top: 0vh !important;
+}
+.navh1{
+    margin: 2.5vh auto;
+    margin-left: 10vh;
+}
+.nmain{
+    display: flex;
+    list-style-type: none;
+    margin-left: 0vh;
+    margin-top: 3.5vh;
+    margin-right: 10vh;
+}
+.li{
+    margin-left: 2vh;
+    height: 5vh;
+}
+li:active{
+    color: red;
+    border-bottom: 1px solid red;
+}
+hr{
+    width: 1000%;
+}
+
+/* phone navbar */
+
+#hnav{
+    display: none !important;
+    list-style-type: none;
+    position: fixed;
+    padding: 5vh;
+    font-size: 300%;
+    height: 200%;
+    background-color: rgba(103, 102, 102, 0.608);
+    text-shadow: 5px 5px black;
+    color: rgb(32, 211, 0);
+}
+#hbtn{
+    background-color: rgba(0, 0, 0, 0.3);
+    padding-right: 210vh;
+    position: fixed;
+    display: none;
+    margin: 0;
+    border: 0;
+}
+hr{
+    width: 4vh;
+    border-color: rgb(255, 255, 255);
+}
+header{
+    height: 0;
+}
+.back{
+    background-color: transparent;
+    color: white;
+    font-size: 100%;
+    border: 0cap;
+}
+button:active{
+    background-color: rgba(255, 255, 255, 0.303);
+}
+.h2{
+    font-family: cursive;
+    color: rgb(191, 255, 0);
+}
+
+/* MAIN1 */
+#MAIN1{
+    background-image: url(search.png);
+    padding: 20vh 70vh;
+    padding-top: 35vh;
+    background-size: 100%;
+    margin: 0;
+    width: 73vh;
+}
+.search{
+    display: flex;
+}
+input{
+    height: min-content;
+    border: 0px;
+    padding: 3vh;
+    background-color: white;
+    width: 50vh;
+}
+.simg{
+    padding: 2vh 7vh;
+    margin: 0px;
+    background-color: aqua;
+}
+/* MAIN2 */
+#MAIN2{
+    padding: 10vh;
+}
+.images{
+    display: flex;
+}
+.image,.imagem{
+    width: 47vh;
+    margin: 1vh;
+    color: rgba(0, 0, 0, 0.422);
+}
+.iseen{
+    width: 49vh;
+    margin: 1vh;
+    text-align: right;
+}
+.imgdiv{
+    display: flex;
+}
+/* Buttons */
+#pages{
+    display: flex;
+    margin-top: 10vh;
+    margin-left: 5vh;
+}
+.btn{
+    padding: 2vh 3vh;
+    border: 0px;
+    border-radius: 3px;
+    font-size: 3vh;
+    background-color: rgba(0, 179, 255, 0.564);
+    color: rgb(255, 255, 255);
+}
+.btns{
+    margin: auto 52vh;
+    display: flex;
+}
+.btnc{
+    padding: 2vh 3vh;
+    border: 0px;
+    border-radius: 3px;
+    margin-left: 3vh;
+    font-size: 3vh;
+    background-color: rgb(220, 220, 220);
+    color: rgb(80, 80, 80);
+}
+.src{
+    border: 0cap;
+    background-color: aqua;
+}
+
+@media (min-width:800px) and (max-width:1100px) {
+    body{
+        width: 200vh;
+        margin: 0;
+        padding: 0;
+    }
+    #MAIN1{
+        width: 75vh;
+    }
+    #MAIN2{
+        padding: 7vh;
+        width: 200vh;
+    }
+    #hnav{
+        display: none !important;
+    }
+}
+@media (min-width:400px) and (max-width:800px) {
+    #nav{
+        display: none;
+    }
+    body{
+        font-size: 5vh;
+    }
+    #hbtn{
+        display: block;
+        font-size: 5vh;
+    }
+    hr{
+        width: 7vh;
+    }
+    #MAIN1{
+        padding-top: 25vh;
+        padding: 30vh 67vh;
+    }
+    input{
+        font-size: 5vh;
+    }
+    #MAIN2{
+        width: 197vh;
+        padding: 5vh;
+    }
+    .images{
+        display: inline-table;
+    }
+    .image{
+        width: 95vh;
+    }
+    .btnc,.btn{
+        font-size: xx-large;
+        padding: 2vh 5vh;
+    }
+    .btns{
+        margin: auto 34vh;
+    }
+}
+
+
+
+@media (min-width:0px) and (max-width:400px) {
+    #nav{
+        display: none;
+    }
+    body{
+        font-size: 7vh;
+    }
+    #hbtn{
+        display: block;
+    }
+    hr{
+        width: 15vh;
+        border: 2px solid white ;
+    }
+    .hr{
+        margin: 5vh auto;
+    }
+    #MAIN1{
+        padding-top: 25vh;
+        padding: 30vh 60vh;
+        width: 87vh;
+    }
+    .search{
+        margin-left: 5vh;
+    }
+    input{
+        font-size: 10vh;
+    }
+    .simg{
+        font-size: 8vh;
+        padding: 2.5vh;
+    }
+    #MAIN2{
+        width: 197vh;
+        padding: 5vh;
+    }
+    .images{
+        display: block;
+    }
+    .image{
+        width: 193vh;
+        font-size: 10vh;
+    }
+    .iseen{
+        width: max-content;
+    }
+    .imagem{
+        width: 127.5vh;
+    }
+    .btnc,.btn{
+        font-size: 10vh;
+        padding: 5vh 20vh;
+        border-radius: 10px;
+    }
+    .btns{
+        margin: 5vh auto;
+    }
+    #pages{
+        display: block;
+    }
+}
